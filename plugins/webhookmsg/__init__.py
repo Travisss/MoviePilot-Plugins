@@ -81,7 +81,7 @@ class WebHookMsg(_PluginBase):
                                         'component': 'VSwitch',
                                         'props': {
                                             'model': 'enabled',
-                                            'label': '启用插件 14:02:12'
+                                            'label': '启用插件 14:08:07'
                                         }
                                     }
                                 ]
