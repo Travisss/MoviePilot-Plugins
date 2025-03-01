@@ -1,5 +1,5 @@
 {
-    "WebHookM": {
+    "WebHookMsg": {
         "name": "webhook通知",
         "description": "支持使用webhook发送消息通知。",
         "labels": "消息通知",
