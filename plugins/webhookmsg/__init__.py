@@ -81,7 +81,7 @@ class WebHookMsg(_PluginBase):
                                         'component': 'VSwitch',
                                         'props': {
                                             'model': 'enabled',
-                                            'label': '启用插件 11:21:34'
+                                            'label': '启用插件 13:32:32'
                                         }
                                     }
                                 ]
@@ -95,7 +95,7 @@ class WebHookMsg(_PluginBase):
                                 'component': 'VCol',
                                 'props': {
                                     'cols': 12,
-                                    'md': 3
+                                    'md': 2
                                 },
                                 'content': [
                                     {
@@ -112,7 +112,7 @@ class WebHookMsg(_PluginBase):
                                 'component': 'VCol',
                                 'props': {
                                     'cols': 12,
-                                    'md': 9
+                                    'md': 10
                                 },
                                 'content': [
                                     {
@@ -133,7 +133,7 @@ class WebHookMsg(_PluginBase):
                                 'component': 'VCol',
                                 'props': {
                                     'cols': 12,
-                                    'md': 3
+                                    'md': 2
                                 },
                                 'content': [
                                     {
@@ -150,7 +150,7 @@ class WebHookMsg(_PluginBase):
                                 'component': 'VCol',
                                 'props': {
                                     'cols': 12,
-                                    'md': 9
+                                    'md': 10
                                 },
                                 'content': [
                                     {
@@ -215,7 +215,7 @@ class WebHookMsg(_PluginBase):
             return
 
         if self._delay:
-            logger.info(f"延迟 {self._delay} 秒后发送WebHook通知... ")
+            logger.info(f"延迟 {self._delay} 秒后发送WebHook通知...")
             time.sleep(float(self._delay))
 
         payload = {
