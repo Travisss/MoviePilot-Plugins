@@ -10,7 +10,7 @@ from app.utils.http import RequestUtils
 
 class WebHookMsg(_PluginBase):
     # 插件名称
-    plugin_name = "webhook通知"
+    plugin_name = "webhook消息通知"
     # 插件描述
     plugin_desc = "支持使用webhook发送消息通知。"
     # 插件图标
