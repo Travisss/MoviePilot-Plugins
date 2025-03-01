@@ -81,7 +81,7 @@ class WebHookMsg(_PluginBase):
                                         'component': 'VSwitch',
                                         'props': {
                                             'model': 'enabled',
-                                            'label': '启用插件 13:44:06'
+                                            'label': '启用插件 14:02:12'
                                         }
                                     }
                                 ]
@@ -214,8 +214,9 @@ class WebHookMsg(_PluginBase):
             logger.info(f"消息类型 {msg_type.value} 未开启消息发送")
             return
 
+        # 延时发送通知
         if self._delay:
-            logger.info(f"延迟 {self._delay} 秒后发送WebHook通知...")
+            logger.info(f"延迟 {self._delay} 秒后发送WebHook消息...")
             time.sleep(float(self._delay))
 
         payload = {
