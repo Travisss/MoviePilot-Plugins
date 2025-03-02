@@ -81,7 +81,7 @@ class WebHookMsg(_PluginBase):
                                         'component': 'VSwitch',
                                         'props': {
                                             'model': 'enabled',
-                                            'label': '启用插件 20:13:45'
+                                            'label': '启用插件 10:14:22'
                                         }
                                     }
                                 ]
@@ -231,6 +231,7 @@ class WebHookMsg(_PluginBase):
                 res = RequestUtils().get_res(self._webhookurl, params=payload)
             if res:
                 logger.info(f"WebHook发送成功：request={self._method}, url={self._webhookurl}, title={title}, desp={text}")
+                logger.info("")
             elif res is not None:
                 logger.error(f"WebHook发送失败，状态码：{res.status_code}，返回信息：{res.text} {res.reason}")
             else:
