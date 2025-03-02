@@ -81,7 +81,7 @@ class WebHookMsg(_PluginBase):
                                         'component': 'VSwitch',
                                         'props': {
                                             'model': 'enabled',
-                                            'label': '启用插件 10:14:22'
+                                            'label': '启用插件 10:31:39'
                                         }
                                     }
                                 ]
@@ -230,14 +230,13 @@ class WebHookMsg(_PluginBase):
             else:
                 res = RequestUtils().get_res(self._webhookurl, params=payload)
             if res:
-                logger.info(f"WebHook发送成功：request={self._method}, url={self._webhookurl}, title={title}, desp={text}")
-                logger.info("")
+                logger.info(f"WebHook发送成功：request={self._method}, url={self._webhookurl}, title={title}, desp={text}\n")
             elif res is not None:
-                logger.error(f"WebHook发送失败，状态码：{res.status_code}，返回信息：{res.text} {res.reason}")
+                logger.error(f"WebHook发送失败，状态码：{res.status_code}，返回信息：{res.text} {res.reason}\n")
             else:
-                logger.error("WebHook发送失败，未获取到返回信息")
+                logger.error("WebHook发送失败，未获取到返回信息\n")
         except Exception as msg_e:
-            logger.error(f"WebHook发送失败，{str(msg_e)}")
+            logger.error(f"WebHook发送失败，{str(msg_e)}\n")
 
     def stop_service(self):
         """
