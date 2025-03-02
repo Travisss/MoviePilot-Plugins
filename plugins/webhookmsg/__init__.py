@@ -81,7 +81,7 @@ class WebHookMsg(_PluginBase):
                                         'component': 'VSwitch',
                                         'props': {
                                             'model': 'enabled',
-                                            'label': '启用插件 11:06:17'
+                                            'label': '启用插件 2025-3-2 17:20:45'
                                         }
                                     }
                                 ]
@@ -206,12 +206,12 @@ class WebHookMsg(_PluginBase):
         image = msg_body.get("image")
 
         if not title and not text:
-            logger.warn("标题和内容不能同时为空")
+            logger.warn("标题和内容不能同时为空\n")
             return
 
         if (msg_type and self._msgtypes
                 and msg_type.name not in self._msgtypes):
-            logger.info(f"消息类型 {msg_type.value} 未开启消息发送")
+            logger.info(f"消息类型 {msg_type.value} 未开启消息发送\n")
             return
 
         # 延时发送通知
