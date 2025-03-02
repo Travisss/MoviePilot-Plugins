@@ -81,7 +81,7 @@ class WebHookMsg(_PluginBase):
                                         'component': 'VSwitch',
                                         'props': {
                                             'model': 'enabled',
-                                            'label': '启用插件 10:31:39'
+                                            'label': '启用插件 11:06:17'
                                         }
                                     }
                                 ]
@@ -225,6 +225,7 @@ class WebHookMsg(_PluginBase):
             "desp": text
         }
         try:
+            logger.info(f"开始发送WebHook消息...")
             if self._method == 'POST':
                 res = RequestUtils(content_type="application/json").post_res(self._webhookurl, json=payload)
             else:
