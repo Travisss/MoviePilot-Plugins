@@ -1,0 +1,15 @@
+{
+    "WebHookMsg": {
+        "name": "自用webhook通知",
+        "description": "支持使用webhook发送消息通知（自用版）",
+        "labels": "消息通知",
+        "version": "1.0",
+        "icon": "webhook.png",
+        "author": "Travisss",
+        "level": 1,
+        "v2": true,
+        "history": {
+            "v1.0": "初始版本，2025-3-4"
+        }
+    }
+}
