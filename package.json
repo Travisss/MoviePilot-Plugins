@@ -1,0 +1,26 @@
+{
+    "WebHookMsg": {
+        "name": "webhook通知",
+        "description": "支持使用webhook发送消息通知",
+        "version": "1.0",
+        "icon": "webhook.png",
+        "author": "Travisss",
+        "level": 1,
+        "v2": true,
+        "history": {
+            "v1.0": "初始版本，2025.03.04"
+        }
+    },
+    "DouBanWatching": {
+        "name": "豆瓣书影音档案",
+        "description": "将剧集在看、看完状态同步到豆瓣书影音档案",
+        "version": "1.9.7",
+        "icon": "https://raw.githubusercontent.com/honue/MoviePilot-Plugins/main/icons/douban.png",
+        "author": "Travisss",
+        "level": 1,
+        "v2": true,
+        "history": {
+            "v1.9.7": "修复v3兼容问题，2026.09.27"
+        }
+    }
+}
